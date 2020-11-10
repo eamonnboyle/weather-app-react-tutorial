@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+
+
+# Weather App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+You will need to register with [Open Weather Map](https://openweathermap.org/) and generate
+a free API Key. Once you have the key, set an environment variable called
+`OPEN_WEATHER_API_KEY` to the key. This will be built into the app and used with
+requests.
 
 ## Available Scripts
 

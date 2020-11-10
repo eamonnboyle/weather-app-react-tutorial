@@ -6,6 +6,7 @@ interface Props {
 
 export const LocationSearch: FC<Props> = ({onSearch}) => {
     const [locationText, setLocationText] = useState('');
+    const searchEnabled = locationText.trim() !== '';
 
     return (
         <div>
@@ -13,7 +14,7 @@ export const LocationSearch: FC<Props> = ({onSearch}) => {
                 Add Location
                 <input className="ml-1 mr-1" type="text" value={locationText} onChange={e => setLocationText(e.target.value)}/>
             </label>
-            <button className="btn btn-primary" onClick={() => onSearch(locationText)}>Search</button>
+            <button disabled={!searchEnabled} className="btn btn-primary" onClick={() => onSearch(locationText)}>Search</button>
         </div>
     );
 }

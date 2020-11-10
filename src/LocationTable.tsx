@@ -1,7 +1,8 @@
 import React, {FC} from "react";
+import {WeatherData, WeatherLocation} from "./model/Weather";
 
 interface Props {
-    locations: string[];
+    locations: WeatherLocation[];
 }
 
 export const LocationTable: FC<Props> = ({locations}) =>
@@ -10,13 +11,17 @@ export const LocationTable: FC<Props> = ({locations}) =>
         <table className="table table-hover">
             <thead>
             <tr>
-                <th>Location</th>
+                <th>Name</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
             </tr>
             </thead>
             <tbody>
             {locations.map(location =>
                 <tr>
-                    <td>{location}</td>
+                    <td>{location.name}</td>
+                    <td>{location.coord.lat}</td>
+                    <td>{location.coord.lon}</td>
                 </tr>
             )}
             </tbody>
