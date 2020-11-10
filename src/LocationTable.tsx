@@ -7,7 +7,7 @@ interface Props {
 export const LocationTable: FC<Props> = ({locations}) =>
     <div>
         <h2>Locations</h2>
-        <table>
+        <table className="table table-hover">
             <thead>
             <tr>
                 <th>Location</th>
