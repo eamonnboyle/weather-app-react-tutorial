@@ -1,11 +1,35 @@
-
-
 # Weather App
+
+This is a simple React App that shows daily weather at various locations. 
+It's the code to accompany a React tutorial provided by Instil Software. By following
+the code and tutorial you'll gain insight into,
+
+- React with TypeScript
+- React Hooksx
+- Async Communication
+- Basic Styling
+
+You'll learn this in more depth and lots more advanced topics in Instil's full
+[React](https://instil.co/courses/react-and-redux/) course. We write all our 
+own content so we're happy to customise to meet your needs, including:
+
+- Using JavaScript of TypeScript
+- Redux
+- Hooks vs Classes
+- Advanced Styling
+- Routing
+- Lazy Loading
+- Testing
+- and more
+
+
+## Core Dependencies
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-You will need to register with [Open Weather Map](https://openweathermap.org/) and generate
-a free API Key. Once you have the key, set an environment variable called
+The app uses [Open Weather Map](https://openweathermap.org/) for the data and 
+**you will need to register** and generate a free API Key.
+Once you have the key, set an environment variable called
 `OPEN_WEATHER_API_KEY` to the key. This will be built into the app and used with
 requests.
 
@@ -36,18 +60,16 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### Learn More
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- To learn React, check out the [React documentation](https://reactjs.org/).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## About Instil Software
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Instil Software is a product focused software development company that also provides
+ training on a multitude of software topics including languages, platforms, techniques and
+  more
+  
+Please visit [Instil Software](https://instil.co) to see if we can help you or your team
+with training, development or consultation.

@@ -5,15 +5,17 @@ import {LocationTable} from './LocationTable';
 import {searchLocation} from './services/WeatherService';
 import {WeatherLocation} from './model/Weather';
 import {ErrorAlert, WarningAlert} from "./Alerts";
+import {WeatherSummary} from "./WeatherSummary";
 
 const App: FC = () => {
     const [locations, setLocations] = useState<WeatherLocation[]>([]);
     const [error, setError] = useState('');
     const [warning, setWarning] = useState('');
+    const [currentLocation, setCurrentLocation] = useState<WeatherLocation | null>(null);
 
     const resetAlerts = () => {
-        if (error !== '') setError('');
-        if (warning !== '') setWarning('')
+        setError('');
+        setWarning('');
     }
 
     let onSearch = async (term: string) => {
@@ -29,8 +31,8 @@ const App: FC = () => {
             return;
         }
 
-
         setLocations([location, ...locations]);
+        setCurrentLocation(location);
     };
 
     return (
@@ -40,7 +42,11 @@ const App: FC = () => {
             <LocationSearch onSearch={onSearch}/>
             <ErrorAlert message={error}/>
             <WarningAlert message={warning}/>
-            <LocationTable locations={locations}/>
+            <LocationTable locations={locations}
+                           current={currentLocation}
+                           onSelect={location => setCurrentLocation(location)}/>
+
+            <WeatherSummary location={currentLocation}/>
         </div>
     );
 };

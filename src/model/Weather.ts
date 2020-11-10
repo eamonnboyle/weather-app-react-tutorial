@@ -11,7 +11,7 @@ export interface WeatherConditions {
     icon: string;
 }
 
-export interface WeatherData {
+export interface MainWeatherData {
     temp: number;
     feels_like: number;
     temp_min: number;
@@ -25,19 +25,17 @@ export interface Wind {
     deg: number;
 }
 
-export interface Clouds {
-    all: number;
+export interface Weather {
+    weather: WeatherConditions[];
+    main: MainWeatherData;
+    visibility: number;
+    wind: Wind;
+    dt: number;
 }
-
 
 export interface WeatherLocation {
     coord: Coordinates;
-    weather: WeatherConditions[];
-    main: WeatherData;
-    visibility: number;
-    wind: Wind;
-    clouds: Clouds;
-    id: number; // City ID
-    name: string; // City Name
+    id: number;
+    name: string;
 }
 
