@@ -5,7 +5,7 @@ It's the code to accompany a React tutorial provided by Instil Software. By foll
 the code and tutorial you'll gain insight into,
 
 - React with TypeScript
-- React Hooksx
+- React Hooks
 - Async Communication
 - Basic Styling
 
