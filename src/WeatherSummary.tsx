@@ -24,13 +24,13 @@ export const WeatherSummary: FC<WeatherSummaryProps> = ({location}) => {
         <div>
             <hr/>
             <h2>{location.name}</h2>
-            <WeatherEntry timepoint={current}/>
+            <WeatherEntry timePoint={current}/>
             <h2>Forecast</h2>
             <div className="overflow-auto">
                 <ol style={({whiteSpace: 'nowrap'})}>
-                    {forecast.map(timepoint =>
-                        <li key={timepoint.dt}>
-                            <WeatherEntry timepoint={timepoint}/>
+                    {forecast.map(timePoint =>
+                        <li key={timePoint.dt}>
+                            <WeatherEntry timePoint={timePoint}/>
                         </li>
                     )}
                 </ol>

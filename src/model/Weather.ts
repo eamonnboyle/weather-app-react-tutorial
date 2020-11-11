@@ -20,16 +20,9 @@ export interface MainWeatherData {
     humidity: number;
 }
 
-export interface Wind {
-    speed: number;
-    deg: number;
-}
-
 export interface Weather {
     weather: WeatherConditions[];
     main: MainWeatherData;
-    visibility: number;
-    wind: Wind;
     dt: number;
 }
 

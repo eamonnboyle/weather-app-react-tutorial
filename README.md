@@ -11,7 +11,7 @@ the code and tutorial you'll gain insight into,
 
 You'll learn this in more depth and lots more advanced topics in Instil's full
 [React](https://instil.co/courses/react-and-redux/) course. We write all our 
-own content so we're happy to customise to meet your needs, including:
+own content, so we're happy to customise to meet your needs, including:
 
 - Using JavaScript of TypeScript
 - Redux
@@ -25,7 +25,8 @@ own content so we're happy to customise to meet your needs, including:
 
 ## Core Dependencies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was boot-strapped with [Create React App](https://github.com/facebook/create-react
+-app).
 
 The app uses [Open Weather Map](https://openweathermap.org/) for the data and 
 **you will need to register** and generate a free API Key.
