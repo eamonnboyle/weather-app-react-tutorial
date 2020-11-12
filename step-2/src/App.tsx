@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import './App.css';
 
 function App() {
-  const [locationSearch, setLocationSearch] = useState('Paris');
-  const [locations, setLocations] = useState(['Belfast', 'Dublin']);
+  const [locationSearch, setLocationSearch] = useState('');
+  const [locations, setLocations] = useState<string[]>([]);
 
   const disableSearch = locationSearch.trim() === '';
   const addLocation = () => {
