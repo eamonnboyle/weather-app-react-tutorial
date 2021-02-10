@@ -28,38 +28,23 @@ own content, so we're happy to customise to meet your needs, including:
 This project was boot-strapped with [Create React App](https://github.com/facebook/create-react
 -app).
 
-The app uses [Open Weather Map](https://openweathermap.org/) for the data and 
+The app uses [Open Weather](https://openweathermap.org/) for the data and 
 **you will need to register** and generate a free API Key.
 Once you have the key, set an environment variable called
-`OPEN_WEATHER_API_KEY` to the key. This will be built into the app and used with
+`REACT_APP_OPEN_WEATHER_API_KEY` to the key. This will be built into the app and used with
 requests.
 
-## Available Scripts
+## Steps
 
-In the project directory, you can run:
+There are 6 versions of the app to align with steps in the tutorial.
 
-### `yarn start`
+To run a step in development mode go into the relevant folder and execute:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- `npm install`
+- `npm start`
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### Learn More
 
