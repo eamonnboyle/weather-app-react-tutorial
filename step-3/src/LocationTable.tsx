@@ -14,8 +14,8 @@ export const LocationTable: FC<LocationTableProps> = ({locations}) =>
       </tr>
       </thead>
       <tbody>
-      {locations.map(location =>
-        <tr>
+      {locations.map((location, index) =>
+        <tr key={index}>
           <td>{location}</td>
         </tr>
       )}

@@ -33,8 +33,8 @@ function App() {
           </tr>
           </thead>
           <tbody>
-          {locations.map(location =>
-            <tr><td>{location}</td></tr>
+          {locations.map((location, index) =>
+            <tr key={index}><td>{location}</td></tr>
           )}
           </tbody>
         </table>

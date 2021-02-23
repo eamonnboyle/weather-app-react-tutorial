@@ -18,7 +18,8 @@ export const LocationTable: FC<LocationTableProps> = ({locations, onSelect, curr
       </thead>
       <tbody>
       {locations.map(location =>
-        <tr className={current?.id === location.id ? 'table-primary' : ''}
+        <tr key={location.id}
+            className={current?.id === location.id ? 'table-primary' : ''}
             onClick={() => onSelect(location)}>
           <td>{location.name}</td>
         </tr>
