@@ -7,7 +7,7 @@ ol {
     list-style-type: none;
     display: inline-block;
 
-    :hover {
+    &:hover {
       background: lightgray;
     }
   }
